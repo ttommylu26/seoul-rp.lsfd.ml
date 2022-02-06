@@ -1,0 +1,12 @@
+/*section1*/
+section{
+    color: rgb(43, 43, 43);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section p{
+    margin-top: 15px;
+}
+/*header*/
