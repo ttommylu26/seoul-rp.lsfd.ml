@@ -94,9 +94,8 @@ nav ul li{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
-    transition: opacity .2s;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #menu{
@@ -108,7 +107,16 @@ nav ul li{
     width: 100%;
     height: 4cm;
     background-color: white;
+    transition: all .2s;
+    transform: translateY(100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+#menu--checkbox:checked ~ #menu--container #menu{
+    transform: translateY(0);
+}
+
 /*menu*/
 /*nav*/
 
@@ -123,8 +131,6 @@ footer{
 }
 
 footer small{
-    opacity: 50%;
-    z-index: 0;
 }
 
 /*footer--modal*/
