@@ -70,6 +70,11 @@ nav ul li{
     transform: rotateY(180deg);
     opacity: 0;
     pointer-events: none;
+    transition: .2s;
+}
+
+#menu--label-1:active{
+    opacity: 50%;
 }
 
 #menu--checkbox:checked ~ #menu--container{
