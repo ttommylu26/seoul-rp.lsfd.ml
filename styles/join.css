@@ -17,6 +17,10 @@ section{
 /*alerta*/
 
 /*formulario*/
+form{
+    margin-bottom: 25px;
+}
+
 form input{
     outline: none;
     border: none;
