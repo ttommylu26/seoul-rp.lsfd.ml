@@ -41,3 +41,23 @@ section p, section h1{
 }
 
 /*section*/
+
+/*media-querys*/
+@media (max-width: 1024px){
+    section{
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+
+    #iframe-discord{
+        margin: 25px;
+        width: 100%;
+    }
+
+    #join-button{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+}
