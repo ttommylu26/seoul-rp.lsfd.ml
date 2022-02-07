@@ -207,6 +207,16 @@ footer small span{
 #redes-sociales li a img{
     width: 35px;
     margin-right: 10px;
+    transition: all .2s;
+}
+
+#redes-sociales li a p{
+    transition: all .2s;
+}
+
+#redes-sociales li a:hover p{
+    opacity: 0;
+    transform: translateX(20%);
 }
 
 /*distinciones*/
@@ -215,10 +225,17 @@ footer small span{
     margin-bottom: 20px;
 }
 
+.discord:hover img{
+    transform: translateX(45px);
+}
+
 .foro{
     background-color: rgb(34,173,62);
 }
 
+.foro:hover img{
+    transform: translateX(30px);
+}
 /*footer--modal*/
 /*footer*/
 

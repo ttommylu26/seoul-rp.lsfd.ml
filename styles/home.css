@@ -34,10 +34,25 @@ section p, section h1{
     border-radius: 5px;
 }
 
+#join-button p{
+    margin-left: 0;
+    transition: all .2s;
+}
+
+#join-button:hover p{
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+#join-button:hover img{
+    transform: translateX(60px);
+}
+
 #join-button img{
     max-width: 60px;
     object-fit: contain;
     margin-right: 10px;
+    transition: all .2s;
 }
 
 /*section*/
