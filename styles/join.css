@@ -1,0 +1,16 @@
+/*section1*/
+section{
+    color: rgb(43, 43, 43);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*alerta*/
+#alerta{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: solid red 8px;
+    width: fit-content;
+}
