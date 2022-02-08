@@ -158,7 +158,8 @@ footer{
 }
 
 footer small{
-    opacity: 50%;
+    font-weight: 500;
+    color: gray;
 }
 
 footer hr{
@@ -173,16 +174,12 @@ footer hr{
 
 /*footer--modal*/
 footer small span{
-    color: rgb(34,173,62);
+    color: rgb(24, 116, 42);
 }
 
 
 #footer--modal{
     max-width: 400px;
-    position: relative;
-    left: 50%;
-    margin-left: -200px;
-
 }
 
 #footer--modal ul{
