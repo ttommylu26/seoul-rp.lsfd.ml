@@ -16,6 +16,16 @@ section{
 }
 /*alerta*/
 
+/*alerta2*/
+#alerta2{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: solid rgb(192, 57, 43) 8px;
+    width: fit-content;
+}
+/*alerta2*/
+
 /*formulario*/
 form{
     margin-bottom: 25px;
@@ -40,4 +50,13 @@ form input[type="submit"]{
 
 form input[type="submit"]:hover{
     opacity: 90%;
+}
+
+/*localstorage--form*/
+.form--hidde{
+    display: none;
+}
+
+.alerta2--show{
+    display: none;
 }

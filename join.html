@@ -57,15 +57,18 @@
     
     <!--section1-->
     <section>
-        <br>
-        <hr>
-        <br>
         <div id="alerta">
             <p><b>El formulario no cuenta con resplado automático. Procura no actualizar la página antes de terminar.</b></p>
         </div>
+        <center>
+            <div id="alerta2" class="alerta2--show">
+                <p><b>Ya ha enviado un formulario</b></p>
+            </div>    
+        </center>
         <br>
 
         <form
+        id="form"
         name="form"
         method="POST"
         data-netlify="true"
@@ -91,7 +94,7 @@
             <br>
             <p style="opacity: 85%;">*Se deberá enviar un solo formulario por persona. Si se descubre que rompiste dicha norma, serás automáticamente descalificado.</p>
             <br>
-            <input type="submit" value="ENVIAR">
+            <input id="button" type="submit" value="ENVIAR">
         </form>
 
     </section>
@@ -115,5 +118,6 @@
         </div>    
 </footer>    
 <!--footer-->
+<script src="js.js"></script>
 </body>
 </html>
