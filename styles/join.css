@@ -1,94 +1,204 @@
-/*section1*/
-section{
-    color: rgb(43, 43, 43);
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
 }
 
-/*alerta*/
-#alerta{
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    border-left: solid rgb(192, 57, 43) 8px;
-    width: fit-content;
-}
-/*alerta*/
-
-/*alerta2*/
-#alerta2{
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    border-left: solid rgb(192, 57, 43) 8px;
-    width: fit-content;
-    margin-top: 115px;
-    margin-bottom: 115px;
-}
-/*alerta2*/
-
-/*formulario*/
-form{
-    margin-bottom: 25px;
-}
-
-form input{
-    outline: none;
-    border: none;
-    padding: 15px;
-    margin-right: 5px;
-    margin-top: 5px;
-    transition: all .2s;
-}
-
-form input:focus{
-    transform: translateY(10%);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-form button{
-    font-weight: 800;
+a{
+    text-decoration-line: none;
     color: white;
-    background-color: rgb(192, 57, 43);
-    border-radius: 5px;
+}
+
+body{
+    background-color: rgb(192,28,34);
+    height: 110vh;
+}
+
+/*header*/
+#header-banner{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+/*nav*/
+nav{
+    background-color: rgb(255,197,13);
+    display: flex;
+    justify-content: space-around;    
     padding: 15px;
-    cursor: pointer;
-    transition: all .2s;
-    border: none;
 }
 
-form button p{
-    transition: all .2s;
+nav li{
+    list-style: none;
 }
 
-form button:hover p{
-    transform: translateY(100%);
-    opacity: 0;
-    pointer-events: none;
+nav a{
+    color: black;
+    font-weight: 700;
 }
 
-form button img{
-    width: 30px;
-    pointer-events: none;
-    position: absolute;
-    margin-left: -15px;
-    margin-top: -7px;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all .2s;
+nav ul li{
+    list-style: none;
+    display: inline-block;
 }
 
-form button:hover img{
-    transform: translateY(0);
-    opacity: 1;
+#nav--real-a:hover{
+    opacity: 50%;
 }
+/*nav*/
+/*header*/
 
-/*localstorage--form*/
-.form--hidde{
+/*menu*/
+#menu--checkbox--label{
+    color: rgb(189,30,34);
+    background-color: white;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    cursor: default;
     display: none;
 }
 
-.alerta2--show{
+#menu--checkbox:checked ~ #menu{
+    display: block;
+}
+
+#menu{
+    background-color: rgb(230, 230, 230);
     display: none;
+}
+
+#menu li{
+    list-style: none;
+    border-bottom: solid rgb(190, 190, 190) 1px;
+}
+
+#menu ul li a{
+    color: rgb(45, 45, 45);
+    font-weight: 700;
+    padding: 15px;
+    display: block;
+}
+/*menu*/
+
+
+
+/*footer*/
+footer{
+    text-align: center;
+    width: auto;
+    background-color: rgb(53, 51, 51);
+    color: white;
+    padding: 30px;
+    margin-top: 10cm;
+}
+
+footer small{
+    font-weight: 500;
+    color: gray;
+}
+
+footer hr{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 80px;
+    opacity: 15%;
+    left: 50%;
+    margin-left: -40px;
+    position: relative;
+}
+
+/*footer--modal*/
+footer small span{
+    color: rgb(24, 116, 42);
+}
+
+
+#footer--modal{
+    max-width: 400px;
+}
+
+#footer--modal ul{
+    list-style: none;
+}
+
+#footer--modal--header img{
+    width: 100%;
+}
+
+#redes-sociales li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#redes-sociales li a img{
+    width: 35px;
+    margin-right: 10px;
+    transition: all .2s;
+}
+
+#redes-sociales li a p{
+    transition: all .2s;
+}
+
+#redes-sociales li a:hover p{
+    opacity: 0;
+    transform: translateX(20%);
+}
+
+/*distinciones*/
+.discord{
+    background-color: rgba(47, 49, 54);
+    margin-bottom: 20px;
+}
+
+.discord:hover img{
+    transform: translateX(45px);
+}
+
+.foro{
+    background-color: rgb(34,173,62);
+}
+
+.foro:hover img{
+    transform: translateX(30px);
+}
+/*footer--modal*/
+/*footer*/
+
+/*media-querys*/
+@media (max-width: 1272px){
+    #header-banner img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1170px){
+    nav{
+        display: none;
+    }
+
+    #menu--checkbox--label{
+        display: block;
+    }
+}
+
+@media (max-width: 464px){
+    #footer--modal{
+        left: 0;
+        margin-left: 0;
+    }
+
+    #footer--modal--header img{
+        object-fit: contain;
+    }
 }

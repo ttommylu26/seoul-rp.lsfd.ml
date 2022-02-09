@@ -1,0 +1,94 @@
+/*section1*/
+section{
+    color: rgb(43, 43, 43);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*alerta*/
+#alerta{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: solid rgb(192, 57, 43) 8px;
+    width: fit-content;
+}
+/*alerta*/
+
+/*alerta2*/
+#alerta2{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: solid rgb(192, 57, 43) 8px;
+    width: fit-content;
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+/*alerta2*/
+
+/*formulario*/
+form{
+    margin-bottom: 25px;
+}
+
+form input{
+    outline: none;
+    border: none;
+    padding: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    transition: all .2s;
+}
+
+form input:focus{
+    transform: translateY(10%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+form button{
+    font-weight: 800;
+    color: white;
+    background-color: rgb(192, 57, 43);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .2s;
+    border: none;
+}
+
+form button p{
+    transition: all .2s;
+}
+
+form button:hover p{
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+form button img{
+    width: 30px;
+    pointer-events: none;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -7px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .2s;
+}
+
+form button:hover img{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*localstorage--form*/
+.form--hidde{
+    display: none;
+}
+
+.alerta2--show{
+    display: none;
+}

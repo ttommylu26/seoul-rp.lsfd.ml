@@ -1,3 +1,4 @@
+//localstorage
 let form = document.getElementById("form");
 let button = document.getElementById("button");
 let alerta = document.getElementById("alerta");

@@ -4,125 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join - LSFD | SeoulRP</title>
-    <!--favicon-->
     <link rel="icon" href="img/logo.png">
-    <!--styles-->
     <link rel="stylesheet" href="styles/join.css">
-    <link rel="stylesheet" href="styles/global-styles.css">
+    <title>Document</title>
 </head>
 <body>
+    
+    <!--menu-->
+    <input hidden type="checkbox" name="menu--checkbox" id="menu--checkbox">
+    <label for="menu--checkbox">
+        <div id="menu--checkbox--label">
+            <p>¡Clic aquí para navegar por la web!</p>
+        </div>    
+    </label>
+    <div id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SALARY AND BENEFITS</a></li>
+            <li><a href="#">HIRING PROCESS</a></li>
+            <li><a id="nav--real-a" href="https://seoul-rp.lsfd.ml/aplicacion">APPLY</a></li>
+            <li><a href="#">PREP PROGRAMS</a></li>
+            <li><a href="#">YOUTH PROGRAMS</a></li>
+            <li><a href="#">LEARN MORE</a></li>
+    </ul>
+    </div>
+    <!--menu-->
+
     <!--header-->
     <header>
-        <div id="ayuda"><small>PARA REPORTAR UNA EMERGENCIA <b>LLAME AL 9-1-1</b></small></div>
-        <div id="bienvenida">
-            <p style="font-weight: 600;">BIENVENIDO A</p>
-            <h1>LOS SANTOS FIRE DEPARTMENT</h1>
+        <div id="header-banner">
+            <img src="img/join-banner.png" alt="">
         </div>
         <!--nav-->
         <nav>
-            <ul id="nav-izq">
-                <li><a href="https://seoul-rp.lsfd.ml">HOME</a></li>
-            </ul>
-            <ul id="nav-der">
-                <li><a class="menu-ubication" href="#">JOIN</a></li>
-            </ul>
-            <!--menu-->
-            <input hidden type="checkbox" name="menu--checkbox" id="menu--checkbox">
-            <label for="menu--checkbox"><img id="menu--label-1" src="img/icons/menu-icon.png" width="30px" alt=""></label>
-            <div id="menu--container">
-                <label for="menu--checkbox" id="menu--label-2">
-                    <div id="menu--background"></div>
-                </label>
-                <div id="menu">
-                    <a href="https://seoul-rp.lsfd.ml">
-                        <img src="img/icons/home-icon.png" alt="">
-                        <small>HOME</small>
-                    </a>
-                    <a class="menu-ubication" href="#">
-                        <img src="img/icons/join-icon.png" alt="">
-                        <small>JOIN</small>
-                    </a>
-
-                </div>
-            </div>
-            <!--menu-->
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SALARY AND BENEFITS</a></li>
+                <li><a href="#">HIRING PROCESS</a></li>
+                <li><a id="nav--real-a" href="https://seoul-rp.lsfd.ml/aplicacion">APPLY</a></li>
+                <li><a href="#">PREP PROGRAMS</a></li>
+                <li><a href="#">YOUTH PROGRAMS</a></li>
+                <li><a href="#">LEARN MORE</a></li>
         </nav>
-        <div id="header-logo">
-            <img src="img/logo.png" width="120px" alt="">
-        </div>
         <!--nav-->
     </header>
     <!--header-->
+
+    <!--section-->
+
+    <!--section-->
+
+        <!--footer-->
+        <footer>
+            <small>Sitio web oficial de la <b>LSFD</b> de <span><b>SeoulRP</b></span></small>
+            <br>
+            <small>Este sitio es extraoficial al equipo administrativo del servidor, ni está dirigido y/o manejado por el mismo</small>    
+            <hr>
+            <center>
+                <div id="footer--modal">
+                    <div id="footer--modal--header">
+                        <img src="img/logoseoul.png" alt="">
+                    </div>
+                    <div id="redes-sociales">
+                        <ul>
+                            <li><a class="discord" href="https://discord.gg/zNS4ev64N3" target="_blank"><img src="img/icons/discord.png" alt=""><p>DISCORD</p></a></li>
+                            <li><a class="foro" href="https://seoul-rp.net/foro/" target="_blank"><img src="img/icons/foro.png" alt=""><p>FORO</p></a></li>
+                        </ul>
+                    </div>
+                </div>        
+            </center>
+            <br>
+            <br>
+            <small>Creado y diseñado por @kruschev_</small>
+        </footer>    
+        <!--footer-->
     
-    <!--section1-->
-    <section>
-        <div id="alerta">
-            <p><b>El formulario no cuenta con resplado automático. Procura no actualizar la página antes de terminar.</b></p>
-        </div>
-        <center>
-            <div id="alerta2" class="alerta2--show">
-                <p><b>Su solicitud fue enviada</b></p>
-            </div>    
-        </center>
-        <br>
-
-        <form
-        id="form"
-        name="formulario"
-        method="POST"
-        data-netlify="true"
-        autocomplete="off"
-        action="/confirmacion-de-envio.html"
-        >
-            <p><b>Datos IC</b></p>
-            <div id="datos--ic">
-                <input type="text" placeholder="Nombre apellido" name="Nombre [IC]" required>
-                <input type="number" placeholder="Edad" name="Edad [IC]" required>
-                <input type="text" placeholder="Nacionalidad" name="Nacionalidad [IC]" required>
-                <input type="text" placeholder="Residencia" name="Residencia" required>
-                <input type="number" placeholder="Número telefónico" name="Número telefónico" required>
-                <input type="text" placeholder="Estado civil" name="Estado civil" required>
-            </div>
-            <br>
-            <p><b>Datos OOC</b></p>
-            <div id="datos-ooc">
-                <input type="text" placeholder="Discord" name="Discord" required>
-                <input type="number" placeholder="Edad" name="Edad [OOC]" required>
-                <input type="text" placeholder="País" name="País" required>
-            </div>
-            <br>
-            <p style="opacity: 85%;">*Asegúrese de <b>haber terminado</b> antes de <b>enviar</b>. Es una <b>acción sin retorno.</b></p>
-            <br>
-            <button id="button" type="submit"><img src="img/icons/submit-icon.png" alt=""><p>ENVIAR</p></button>
-        </form>
-
-    </section>
-
-    <!--footer-->
-    <footer>
-        <small>Sitio web oficial de la <b>LSFD</b> de <span><b>SeoulRP</b></span></small>
-        <br>
-        <small>Este sitio es extraoficial al equipo administrativo del servidor, ni está dirigido y/o manejado por el mismo</small>    
-        <hr>
-        <center>
-            <div id="footer--modal">
-                <div id="footer--modal--header">
-                    <img src="img/logoseoul.png" alt="">
-                </div>
-                <div id="redes-sociales">
-                    <ul>
-                        <li><a class="discord" href="https://discord.gg/zNS4ev64N3" target="_blank"><img src="img/icons/discord.png" alt=""><p>DISCORD</p></a></li>
-                        <li><a class="foro" href="https://seoul-rp.net/foro/" target="_blank"><img src="img/icons/foro.png" alt=""><p>FORO</p></a></li>
-                    </ul>
-                </div>
-            </div>        
-        </center>
-        <br>
-        <br>
-        <small>Creado y diseñado por @kruschev_</small>
-    </footer>    
-    <!--footer-->
-<script src="js.js"></script>
 </body>
 </html>

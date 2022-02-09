@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/global-styles.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <title>Join - LSFD | SeoulRP</title>
+    <!--favicon-->
     <link rel="icon" href="img/logo.png">
-    <title>LSFD | SeoulRP</title>
+    <!--styles-->
+    <link rel="stylesheet" href="styles/aplicacion.css">
+    <link rel="stylesheet" href="styles/global-styles.css">
 </head>
 <body>
-    
     <!--header-->
     <header>
         <div id="ayuda"><small>PARA REPORTAR UNA EMERGENCIA <b>LLAME AL 9-1-1</b></small></div>
@@ -61,44 +62,51 @@
         <!--nav-->
     </header>
     <!--header-->
-
-    <div id="banner">
-        <img src="img/banner.png" alt="">
-    </div>
-
-    <!--section-->
+    
+    <!--section1-->
     <section>
-        <div>    
-            <b><p>Información</p></b>
-            <br>
-            <p>
-                El departamento de bomberos de Los Santos es la agencia que provee protección contra incendios y servicios de emergencia para la ciudad de Los Santos. <br>
-                Brinda servicios médicos de emergencia, determinación de la causa del incendio, prevención de incendios, extinción de incendios, mitigación de materiales peligrosos y servicios de rescate a la ciudad de Los Santos, San Andreas. <br> <br>
-                <b>Visión de la LSFD</b> <br> <br>
-                El departamento de bomberos de Los Santos brindará Servicios Médicos de Emergencia y Protección contra Incendios excepcionales al ser impulsado por métricas, tecnológicamente sofisticado y centrado en la comunidad, al mismo tiempo que refleja a las personas a las que servimos.
-                <br> <br>
-                <b>Valores del Departamento</b> <br> <br>
-                • Servicio – Dedicación a nuestra comunidad. <br> <br>
-                • Profesionalismo – Honrando el juramento del bombero. <br> <br>
-                • Integridad: defender la conducta moral y ética en todo momento. <br> <br>
-                • Respeto: aceptar la diversidad y reconocer el valor individual <br> <br>
-                • Innovación: asumir riesgos creativos para adaptarse y mejorar. <br> <br>
-                • Confianza: confianza en la integridad, la fuerza y ​​la capacidad de nuestros miembros.
-            </p>
-            <br>
-            <a id="join-button" href="https://seoul-rp.lsfd.ml/join"><img src="img/icons/join-icon.png" alt=""><p>ÚNETE</p></a>
+        <div id="alerta">
+            <p><b>El formulario no cuenta con resplado automático. Procura no actualizar la página antes de terminar.</b></p>
         </div>
-    
-        
-        <widgetbot id="iframe-discord"
-        server="912086371949236276"
-        channel="912090059363221544"
-        ></widgetbot>
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>    
-    
+        <center>
+            <div id="alerta2" class="alerta2--show">
+                <p><b>Su solicitud fue enviada</b></p>
+            </div>    
+        </center>
+        <br>
+
+        <form
+        id="form"
+        name="formulario"
+        method="POST"
+        data-netlify="true"
+        autocomplete="off"
+        action="/confirmacion-de-envio.html"
+        >
+            <p><b>Datos IC</b></p>
+            <div id="datos--ic">
+                <input type="text" placeholder="Nombre apellido" name="Nombre [IC]" required>
+                <input type="number" placeholder="Edad" name="Edad [IC]" required>
+                <input type="text" placeholder="Nacionalidad" name="Nacionalidad [IC]" required>
+                <input type="text" placeholder="Residencia" name="Residencia" required>
+                <input type="number" placeholder="Número telefónico" name="Número telefónico" required>
+                <input type="text" placeholder="Estado civil" name="Estado civil" required>
+            </div>
+            <br>
+            <p><b>Datos OOC</b></p>
+            <div id="datos-ooc">
+                <input type="text" placeholder="Discord" name="Discord" required>
+                <input type="number" placeholder="Edad" name="Edad [OOC]" required>
+                <input type="text" placeholder="País" name="País" required>
+            </div>
+            <br>
+            <p style="opacity: 85%;">*Asegúrese de <b>haber terminado</b> antes de <b>enviar</b>. Es una <b>acción sin retorno.</b></p>
+            <br>
+            <button id="button" type="submit"><img src="img/icons/submit-icon.png" alt=""><p>ENVIAR</p></button>
+        </form>
+
     </section>
-    <!--section-->
- 
+
     <!--footer-->
     <footer>
         <small>Sitio web oficial de la <b>LSFD</b> de <span><b>SeoulRP</b></span></small>
@@ -123,5 +131,6 @@
         <small>Creado y diseñado por @kruschev_</small>
     </footer>    
     <!--footer-->
+<script src="js.js"></script>
 </body>
 </html>
