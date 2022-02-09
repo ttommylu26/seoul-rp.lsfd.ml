@@ -4,107 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join - LSFD | SeoulRP</title>
+    <title>Aplicación - LSFD | SeoulRP</title>
     <!--favicon-->
     <link rel="icon" href="img/logo.png">
     <!--styles-->
     <link rel="stylesheet" href="styles/aplicacion.css">
-    <link rel="stylesheet" href="styles/global-styles.css">
 </head>
 <body>
+    <!--menu-->
+    <input hidden type="checkbox" name="menu--checkbox" id="menu--checkbox">
+    <label for="menu--checkbox">
+        <div id="menu--checkbox--label">
+            <p>¡Clic aquí para navegar por la web!</p>
+        </div>    
+    </label>
+    <div id="menu">
+        <ul>
+            <li><a href="https://seoul-rp.lsfd.ml/join">HOME</a></li>
+            <li><a href="#">SALARY AND BENEFITS</a></li>
+            <li><a href="#">HIRING PROCESS</a></li>
+            <li><a style="opacity: 50%;" href="#">APPLY</a></li>
+            <li><a href="#">PREP PROGRAMS</a></li>
+            <li><a href="#">YOUTH PROGRAMS</a></li>
+            <li><a href="#">LEARN MORE</a></li>
+    </ul>
+    </div>
+    <!--menu-->
+
     <!--header-->
     <header>
-        <div id="ayuda"><small>PARA REPORTAR UNA EMERGENCIA <b>LLAME AL 9-1-1</b></small></div>
-        <div id="bienvenida">
-            <p style="font-weight: 600;">BIENVENIDO A</p>
-            <h1>LOS SANTOS FIRE DEPARTMENT</h1>
+        <div id="header-banner">
+            <img src="img/join-banner.png" alt="">
         </div>
         <!--nav-->
         <nav>
-            <ul id="nav-izq">
-                <li><a id="nav--real-a" href="#">HOME</a></li>
-                <li><a href="#">FIRE STATIONS</a></li>
-                <li><a href="#">WILDFIRE</a></li>
-                <li><a href="#">SAFETY</a></li>
-            </ul>
-            <div id="nav--separacion">negro</div>
-            <ul id="nav-der">
-                <li><a href="#">FIRE PREVENTION</a></li>
-                <li><a href="#">FIRESTATLA</a></li>
-                <li><a id="nav--real-a" href="https://seoul-rp.lsfd.ml/join">JOIN</a></li>
-                <li><a href="#">FAQS</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
-            <!--menu-->
-            <input hidden type="checkbox" name="menu--checkbox" id="menu--checkbox">
-            <label for="menu--checkbox"><img id="menu--label-1" src="img/icons/menu-icon.png" width="30px" alt=""></label>
-            <div id="menu--container">
-                <label for="menu--checkbox" id="menu--label-2">
-                    <div id="menu--background"></div>
-                </label>
-                <div id="menu">
-                    <a class="menu-ubication" href="#">
-                        <img src="img/icons/home-icon.png" alt="">
-                        <small>HOME</small>
-                    </a>
-                    <a href="https://seoul-rp.lsfd.ml/join">
-                        <img src="img/icons/join-icon.png" alt="">
-                        <small>JOIN</small>
-                    </a>
-
-                </div>
-            </div>
-            <!--menu-->
+                <li><a id="nav--real-a" href="https://seoul-rp.lsfd.ml/join">HOME</a></li>
+                <li><a href="#">SALARY AND BENEFITS</a></li>
+                <li><a href="#">HIRING PROCESS</a></li>
+                <li><a id="nav--real-a" href="#">APPLY</a></li>
+                <li><a href="#">PREP PROGRAMS</a></li>
+                <li><a href="#">YOUTH PROGRAMS</a></li>
+                <li><a href="#">LEARN MORE</a></li>
         </nav>
-        <div id="header-logo">
-            <img src="img/logo.png" width="120px" alt="">
-        </div>
         <!--nav-->
     </header>
     <!--header-->
     
     <!--section1-->
     <section>
-        <div id="alerta">
-            <p><b>El formulario no cuenta con resplado automático. Procura no actualizar la página antes de terminar.</b></p>
-        </div>
-        <center>
-            <div id="alerta2" class="alerta2--show">
-                <p><b>Su solicitud fue enviada</b></p>
-            </div>    
-        </center>
-        <br>
+            <center>
+                <div id="alerta2" class="alerta2--show">
+                    <p><b>Su solicitud fue enviada</b></p>
+                </div>    
+            </center>
+            <br>
+    
+            <form
+            id="form"
+            name="formulario"
+            method="POST"
+            data-netlify="true"
+            autocomplete="off"
+            action="/confirmacion-de-envio.html"
+            >
+                <div id="alerta">
+                    <p><b>El formulario no cuenta con resplado automático. Procura no actualizar la página antes de terminar.</b></p>
+                </div>
 
-        <form
-        id="form"
-        name="formulario"
-        method="POST"
-        data-netlify="true"
-        autocomplete="off"
-        action="/confirmacion-de-envio.html"
-        >
-            <p><b>Datos IC</b></p>
-            <div id="datos--ic">
-                <input type="text" placeholder="Nombre apellido" name="Nombre [IC]" required>
-                <input type="number" placeholder="Edad" name="Edad [IC]" required>
-                <input type="text" placeholder="Nacionalidad" name="Nacionalidad [IC]" required>
-                <input type="text" placeholder="Residencia" name="Residencia" required>
-                <input type="number" placeholder="Número telefónico" name="Número telefónico" required>
-                <input type="text" placeholder="Estado civil" name="Estado civil" required>
-            </div>
-            <br>
-            <p><b>Datos OOC</b></p>
-            <div id="datos-ooc">
-                <input type="text" placeholder="Discord" name="Discord" required>
-                <input type="number" placeholder="Edad" name="Edad [OOC]" required>
-                <input type="text" placeholder="País" name="País" required>
-            </div>
-            <br>
-            <p style="opacity: 85%;">*Asegúrese de <b>haber terminado</b> antes de <b>enviar</b>. Es una <b>acción sin retorno.</b></p>
-            <br>
-            <button id="button" type="submit"><img src="img/icons/submit-icon.png" alt=""><p>ENVIAR</p></button>
-        </form>
-
+                <div id="datos--ic">
+                    <p><b>Datos IC</b></p>
+                    <input type="text" placeholder="Nombre apellido" name="Nombre [IC]" required>
+                    <input type="number" placeholder="Edad" name="Edad [IC]" required>
+                    <input type="text" placeholder="Nacionalidad" name="Nacionalidad [IC]" required>
+                    <input type="text" placeholder="Residencia" name="Residencia" required>
+                    <input type="number" placeholder="Número telefónico" name="Número telefónico" required>
+                    <input type="text" placeholder="Estado civil" name="Estado civil" required>
+                </div>
+                <br>
+                <div id="datos-ooc">
+                    <p><b>Datos OOC</b></p>
+                    <input type="text" placeholder="Discord" name="Discord" required>
+                </div>
+                <br>
+                <div id="preguntas--ic">
+                    <p><b>Preguntas IC</b></p>
+                    <textarea required name="¿Por qué decidiste entrar en la academia del departamento de bomberos?" placeholder="¿Por qué decidiste entrar en la academia del departamento de bomberos?" cols="30" rows="10"></textarea>
+                    <textarea required name="¿Qué carrera específicamente quisieras seguir? Paramédico o Bombero" placeholder="¿Qué carrera específicamente quisieras seguir? Paramédico o Bombero" id="" cols="30" rows="10"></textarea>
+                    <textarea required name="¿Te comprometes a acudir a las prácticas a las horas designadas?" placeholder="¿Te comprometes a acudir a las prácticas a las horas designadas?" cols="30" rows="10"></textarea>
+                    <textarea required name="¿Tienes alguna enfermedad o fractura la cuál te impida trabajar?" placeholder="¿Tienes alguna enfermedad o fractura la cuál te impida trabajar?" cols="30" rows="10"></textarea>
+                    <textarea required name="¿Te consideras una persona la cuál puede trabajar sin necesidad de un líder de equipo?" placeholder="¿Te consideras una persona la cuál puede trabajar sin necesidad de un líder de equipo?" cols="30" rows="10"></textarea>
+                    <textarea required name="¿Cuáles han sido tus empleos anteriores?" placeholder="¿Cuáles han sido tus empleos anteriores?" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div id="preguntas--ooc">
+                    <p><b>Preguntas OOC</b></p>
+                    <textarea required placeholder="¿Cuales son tus propósitos dentro de la facción?" name="¿Cuales son tus propósitos dentro de la facción?" id="" cols="30" rows="10"></textarea>
+                    <textarea required placeholder="¿Tienes conocimiento acerca del departamento de bomberos de Los Angeles?" name="¿Tienes conocimiento acerca del departamento de bomberos de Los Angeles?" id="" cols="30" rows="10"></textarea>
+                    <textarea required placeholder="¿Cuál es tu horario de conexión?" name="¿Cuál es tu horario de conexión?" id="" cols="30" rows="10"></textarea>
+                    <textarea required placeholder="¿De qué país vienes y qué edad tienes?" name="¿De qué país vienes y qué edad tienes?" id="" cols="30" rows="10"></textarea>
+                    <textarea required placeholder="¿Tienes personajes secundarios?, Si es así indica sus nombres." name="¿Tienes personajes secundarios?, Si es así indica sus nombres." id="" cols="30" rows="10"></textarea>
+                    <textarea required placeholder="¿Tienes buena ortografía y gramática? Redacta una breve historia de tu personaje." name="¿Tienes buena ortografía y gramática? Redacta una breve historia de tu personaje." id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <p style="opacity: 85%;">*Asegúrese de <b>haber terminado</b> antes de <b>enviar</b>. Es una <b>acción sin retorno.</b></p>
+                <br>
+                <button id="button" type="submit"><img src="img/icons/submit-icon.png" alt=""><p>ENVIAR</p></button>
+            </form>    
     </section>
 
     <!--footer-->
